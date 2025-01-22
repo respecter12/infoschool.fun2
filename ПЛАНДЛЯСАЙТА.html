@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>План школы № 853</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(90deg, #b9deed, #efefef); 
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            width: 100px;
+        }
+        
+        .container {
+            width: 800px;
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 10px; /* Скругление углов */ 
+        }
+        
+        h1 {
+            background-color: #ebebeb; /* Заливка серым цветом */ 
+            padding: 10px; /* Внутренний отступ */ 
+            text-align: center; /* Центрирование текста */ 
+            border-radius: 10px; /* Скругление углов */ 
+            margin-top: 0;
+            color: #333;
+        }
+        
+        .floor-switcher {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        
+        .floor-button {
+            display: inline-block; /* Чтобы кнопки располагались рядом */
+            padding: 15px 30px; /* Увеличенные внутренние отступы */
+            margin-right: 10px; /* Отступ между кнопками */
+            cursor: pointer;
+            border: none; /* Убираем границу */
+            background-color: #eaeaea; /* Серый цвет фона */
+            color: #333; /* Цвет текста */
+            font-size: 18px; /* Увеличенный размер шрифта */
+            text-decoration: none; /* Убираем подчеркивание */
+            border-radius: 5px; /* Скругление углов кнопки */
+            transition: background-color 0.3s ease; /* Плавный переход цвета */
+        }
+
+        .floor-button:hover {
+            background-color: #d3d3d3; /* Цвет при наведении */
+        }
+
+        .floor-button:focus {
+            outline: none; /* Убираем синее выделение при фокусе */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>ПЛАН ШКОЛЫ № 853</h1>
+    
+    <div class="floor-switcher">
+        <a href="./окно.html" class="floor-button"><b>1 этаж</b></a>
+        <a href="ссылка_на_план_2_этажа" class="floor-button"><b>2 этаж</b></a>
+        <a href="ссылка_на_план_3_этажа" class="floor-button"><b>3 этаж</b></a>
+    </div>
+</div>
+
+<!-- Логотип -->
+<img src="./logo_853.png" alt="Логотип" class="logo">
+</body>
+</html>

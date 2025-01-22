@@ -1,0 +1,282 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Ввод данных</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            background: linear-gradient(90deg, #b9deed, #efefef); 
+        } 
+        .success-message {
+            position: fixed;
+            left: 110px;
+            top: 10px;
+            background-color: #dff0d8;
+            color: green;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 4px;
+            text-align: center;
+            display: none;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            width: 100px
+        }
+
+        .main-container { 
+            width: 400px; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 5px rgba(15, 15, 15, 0.3); 
+            background-color: white; 
+        } 
+        h1 { 
+            text-align: center; 
+            color: #333; 
+        } 
+        form { 
+            margin-top: 30px; 
+        } 
+        label { 
+            display: block; 
+            margin-bottom: 10px; 
+            font-weight: bold; 
+        } 
+        input[type="text"] { 
+            width: 100%; 
+            padding: 12px 20px; 
+            margin: 8px 0; 
+            box-sizing: border-box; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+         } 
+        /* Добавляем отступ снизу для первой кнопки */
+        button:first-of-type {
+            margin-bottom: 0px;
+            margin-top: 16px;
+         } 
+        button { 
+            width: 100%; 
+            padding: 12px; 
+            background-color: #4CAF50; 
+            color: white; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease; 
+        } 
+        button:hover { 
+            background-color: #45a049; 
+        } 
+        ul { 
+            list-style-type: none; 
+            padding: 0; 
+            margin-top: 20px; 
+        } 
+        li { 
+            margin: 10px 0; 
+            padding: 10px; 
+            background-color: #e6e6ff; 
+            border-left: 5px solid #6666ff; 
+        }  
+    </style> 
+</head> 
+<body>
+     <!-- Логотип -->
+    <img src="./logo_853.png" alt="Логотип" class="logo">
+<div class="container">
+ 
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Нстройки</title> 
+    <style> 
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        } 
+ 
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+        } 
+ 
+        .content { 
+            max-width: 800px; 
+            padding: 20px; 
+            background-color: #fff; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            border-radius: 10px; 
+        } 
+ 
+        h1 { 
+            text-align: center; 
+            margin-bottom: 20px; 
+        } 
+ 
+        p { 
+            margin-bottom: 10px; 
+        } 
+ 
+        .settings-button { 
+            position: fixed; 
+            top: 20px; 
+            right: 20px; 
+            background-color: #007BFF; 
+            color: #fff; 
+            padding: 10px 15px; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease; 
+        } 
+ 
+        .settings-button:hover { 
+            background-color: #0056b3; 
+        } 
+ 
+        .settings-menu { 
+            position: fixed; 
+            top: 60px; 
+            right: 20px; 
+            background-color: #fff; 
+            padding: 10px; 
+            border-radius: 5px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            display: none; 
+        } 
+ 
+        .settings-menu.show { 
+            display: block; 
+        } 
+ 
+        .settings-menu a { 
+            display: block; 
+            text-decoration: none; 
+            color: #000; 
+            padding: 5px 0; 
+        } 
+ 
+        .settings-menu a:hover { 
+            text-decoration: underline; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="settings-button" onclick="toggleSettings()"><b>Настройки<b></div> 
+    <div class="settings-menu"
+
+id="settingsMenu"> 
+        <a href="#">Изменить тему</a> 
+        <a href="#">Язык</a> 
+        <a href="#">Уведомления</a> 
+        <a href="#">Профиль</a> 
+    </div> 
+ 
+    <script> 
+        function toggleSettings() { 
+            var settingsMenu = document.getElementById("settingsMenu"); 
+            settingsMenu.classList.toggle("show"); 
+        } 
+    </script> 
+</body> 
+<div class="main-container"> 
+ <style> 
+        h1 { 
+            background-color: #ebebeb; /* Заливка серым цветом */ 
+            padding: 10px; /* Внутренний отступ */ 
+            text-align: center; /* Центрирование текста */ 
+            border-radius: 10px; /* Скругление углов */ 
+        } 
+    </style> 
+</head> 
+<body> 
+    <h1>ВХОД ПОЛЬЗОВАТЕЛЯ</h1>
+    
+    <!-- Форма добавления учителя -->
+    <form id="loginForm" action="./ПЛАНДЛЯСАЙТА.html" method="get"> 
+        <label for="lastName">Фамилия:</label>
+        <input type="text" id="lastName" placeholder="Введите фамилию" required>
+        
+        <label for="firstName">Имя:</label>
+        <input type="text" id="firstName" placeholder="Введите имя" required>
+        
+        <label for="middleName">Отчество:</label>
+        <input type="text" id="middleName" placeholder="Введите отчество" required>
+        
+        <button type="submit" id="registerButton">Войти</button>
+    </form>
+    
+    <!-- Уведомление об успешном входе -->
+    <div class="success-message" id="successMessage">
+        Вы успешно вошли!
+    </div>
+   
+<script>
+     let isNotificationActive = false; // Флаг активности уведомления
+
+    // Функция для обработки отправки формы
+    document.getElementById('addTeacherForm').onsubmit = function(event) {
+        event.preventDefault(); // Отменяем стандартную отправку формы
+
+        const lastName = document.getElementById('lastName').value.trim();
+        const firstName = document.getElementById('firstName').value.trim();
+        const middleName = document.getElementById('middleName').value.trim();
+
+        if (!lastName || !firstName || !middleName) {
+            alert("Заполните все поля!");
+            return;
+        }
+
+        // Проверим, какая кнопка была нажата
+        let target = event.submitter;
+        if (isNotificationActive) return; // Если уведомление уже активно, ничего не делаем
+
+        if (target.id === 'registerButton') {
+            // Показываем уведомление об успешной регистрации
+            showSuccessMessage('successMessage', 'Вы успешно вошли!');
+        } else if (target.id === 'loginButton') {
+            // Показываем уведомление об успешном входе
+            showSuccessMessage('loginMessage', 'Вы успешно вошли!');
+        }
+    };
+
+    // Общая функция для показа уведомления
+    function showSuccessMessage(messageId, messageText) {
+        if (isNotificationActive) return; // Если уведомление уже активно, ничего не делаем
+
+        isNotificationActive = true; // Устанавливаем флаг активности уведомления
+
+        const successMessage = document.getElementById(messageId);
+        successMessage.textContent = messageText;
+        successMessage.style.display = 'block';
+
+        setTimeout(() => {
+            successMessage.style.display = 'none';
+            isNotificationActive = false; // Сбрасываем флаг активности уведомления
+        }, 3000); // Скрываем уведомление через 3 секунды
+    }
+
+    // Функция для перехода на план школы
+    function goToSchoolPlan() {
+        window.location.href = './'; // Указать путь к плану школы
+    }
+</script> 
+</body> 
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кабинет и Расписание</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0; /* Цвет фона страницы */
+        }
+
+        .container {
+            background-color: white; /* Цвет фона контейнера */
+            border-radius: 15px; /* Округленные края */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
+            width: 80%; /* Ширина контейнера */
+            max-width: 800px; /* Максимальная ширина контейнера */
+            overflow: hidden; /* Скрытие переполнения */
+        }
+
+        .header {
+            height: 300px; /* Высота шапки */
+            background-image: url('./тут\ должно\ быть\ фото\ кабинета.jpg'); /* Путь к изображению кабинета */
+            background-size: cover; /* Масштабирование изображения */
+            background-position: center; /* Центрирование изображения */
+        }
+
+        .schedule {
+            padding: 20px; /* Отступы внутри блока расписания */
+            background-color: #e9e9e9; /* Цвет фона расписания */
+        }
+
+        h1 {
+            margin: 0;
+            text-align: center; /* Центрирование текста */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="schedule">
+            <h1>Расписание</h1>
+            <p>Здесь будет ваше расписание.</p>
+            <!-- Добавьте таблицу или список с расписанием здесь -->
+        </div>
+    </div>
+</body>
+</html>

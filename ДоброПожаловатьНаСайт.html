@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Добро пожаловать</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(90deg, #b9deed, #efefef);
+            position: relative; /* Добавлено для позиционирования логотипа */
+        }
+
+        .logo {
+            position: absolute; /* Логотип будет позиционироваться относительно родителя */
+            top: 20px; /* Отступ сверху */
+            left: 20px; /* Отступ слева */
+            width: 80px; /* Размер логотипа для компьютеров */
+            transition: width 0.3s; /* Плавный переход изменения размера */
+        }
+
+        .main-content {
+            position: relative;
+            z-index: 1;
+            padding: 20px; /* Добавляем отступы для мобильных устройств */
+            width: 90%; /* Устанавливаем ширину в процентах для адаптивности */
+            max-width: 400px; /* Максимальная ширина для больших экранов */
+        }
+
+        .welcome-message {
+            padding: 20px; /* Уменьшаем отступы для мобильных устройств */
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(15, 15, 15, 0.3);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2em; /* Оставляем оригинальный размер шрифта заголовка */
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        a.button:hover {
+            background-color: #45a049;
+        }
+
+        .info-list {
+            display: flex;
+            list-style-type: none;
+            padding-left: 0;
+            animation: scroll 30s infinite linear;
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Медиа-запросы для мобильных устройств */
+        @media (max-width: 600px) {
+            .logo {
+                width: 60px; /* Уменьшаем размер логотипа для мобильных устройств */
+            }
+
+            h1 {
+                font-size: 1.5em; /* Уменьшаем размер шрифта заголовка на маленьких экранах */
+            }
+
+            .welcome-message {
+                padding: 15px; /* Уменьшаем отступы для мобильной версии */
+            }
+
+            a.button {
+                padding: 10px 20px; /* Уменьшаем отступы кнопки на маленьких экранах */
+                font-size: 0.9em; /* Уменьшаем размер шрифта кнопки */
+            }
+        }
+    </style> 
+</head> 
+<body>
+    <!-- Логотип -->
+    <img src="./logo_853.png" alt="Логотип" class="logo">
+    
+    <div class="main-content">
+        <div class="welcome-message">
+            <h1>Добро пожаловать на сайт!</h1>
+            
+            <p><a href="./ВХОД.html" class="button">Вход</a></p>
+        </div>
+    </div>
+</body> 
+</html>

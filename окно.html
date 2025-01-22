@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Изображение в оригинальном размере</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex; /* Используем flexbox для центрирования */
+            justify-content: center; /* Горизонтальное центрирование */
+            align-items: center; /* Вертикальное центрирование */
+            height: 100vh; /* Высота на весь экран */
+            overflow: hidden; /* Скрываем прокрутку страницы */
+        }
+
+        img {
+            max-width: none; /* Отключаем ограничение по ширине */
+            max-height: none; /* Отключаем ограничение по высоте */
+            display: block; /* Убираем отступы снизу */
+        }
+    </style>
+</head>
+<body>
+    <img src="./1 этаж копия.jpg" alt="Описание изображения" usemap="#Navigation" />
+
+    <map name="Navigation">
+        <area shape="rect" coords="167,273,216,361" href="#1-rect" alt="Ссылка 1">
+        <area shape="rect" coords="167,362,216,384" href="#2-rect" alt="Ссылка 2">
+        <area shape="rect" coords="167,384,216,473" href="#3-rect" alt="Ссылка 3">
+        <area shape="rect" coords="244,473,320,545" href="#4-rect" alt="Ссылка 4">
+        <area shape="rect" coords="247,406,297,473" href="#5-rect" alt="Ссылка 5">
+        <area shape="rect" coords="247,318,297,384" href="#6-rect" alt="Ссылка 6">
+        <area shape="rect" coords="247,228,297,317" href="#7-rect" alt="Ссылка 7">
+        <area shape="rect" coords="428,81,609,160" href="#8-rect" alt="Ссылка 8">
+        <area shape="rect" coords="558,384,608,449" href="#9-rect" alt="Ссылка 9">
+        <area shape="rect" coords="558,318,608,384" href="#10-rect" alt="Ссылка 10">
+        <area shape="rect" coords="558,229,608,318" href="#11-rect" alt="Ссылка 11">
+        <area shape="rect" coords="640,440,690,472" href="#12-rect" alt="Ссылка 12">
+        <area shape="rect" coords="640,407,690,440" href="#13-rect" alt="Ссылка 13">
+        <area shape="rect" coords="640,374,690,407" href="#14-rect" alt="Ссылка 14">
+        <area shape="rect" coords="640,341,690,374" href="#15-rect" alt="Ссылка 15">
+        <area shape="rect" coords="640,275,690,341" href="#16-rect" alt="Ссылка 16">
+        <area shape="rect" coords="640,209,690,275" href="#17-rect" alt="Ссылка 17">
+    </map>
+</body>
+</html>
